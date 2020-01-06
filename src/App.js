@@ -45,7 +45,7 @@ class App extends React.Component {
 
     const apiPics = "14470492-2e8ec77f878d4d259f35a57e1";
     const apiCallPics = await fetch(
-      ` https://pixabay.com/api/?key=${apiPics}&q=${this.state.location} + city&image_type=photo&pretty=true`
+      ` http://pixabay.com/api/?key=${apiPics}&q=${this.state.location} + city&image_type=photo&pretty=true`
     );
     console.log(apiCallPics);
 
