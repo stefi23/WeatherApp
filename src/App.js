@@ -118,7 +118,7 @@ class App extends React.Component {
                     backgroundRepeat: `no-repeat`,
                     height: `200px`,
                     width: `auto`
-                    // test
+                    // test 2
                   }}
                 >
                   <div
