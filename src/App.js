@@ -38,14 +38,14 @@ class App extends React.Component {
     // call Open Weather API
     const apiKey = "4482eb7c5cc1bfcc269ddde71d43a734";
     const apiCall = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&appid=${apiKey}&units=metric`
+      `http://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&appid=${apiKey}&units=metric`
     );
 
     const data = await apiCall.json();
 
     const apiPics = "14470492-2e8ec77f878d4d259f35a57e1";
     const apiCallPics = await fetch(
-      ` https://pixabay.com/api/?key=${apiPics}&q=${this.state.location} + city&image_type=photo&pretty=true`
+      ` http://pixabay.com/api/?key=${apiPics}&q=${this.state.location} + city&image_type=photo&pretty=true`
     );
     console.log(apiCallPics);
 
